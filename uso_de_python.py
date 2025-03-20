@@ -9,6 +9,7 @@ lineas
 print("Estudiando python")
 
 #definicion de variables
+
 '''
 
 reglas:
@@ -23,6 +24,7 @@ y=15
 
 print(x+y)
 
-entrada_de_datos=
+
 print(type(x))
+
 #class 
