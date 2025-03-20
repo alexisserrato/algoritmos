@@ -1,8 +1,8 @@
 #Autor:Alexis Serrato
 #este es un comentario de una sola linea
 ''''
-este es un comentario de  '
-multiples'
+este es un comentario de  
+multiples
 lineas
 
 '''
@@ -22,6 +22,7 @@ x=50
 y=15
 
 print(x+y)
+
 entrada_de_datos=
 print(type(x))
 #class 
