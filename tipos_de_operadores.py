@@ -3,9 +3,9 @@ Operadores aritméticos
 '''
 
 
-# # Suma
-# x=2+6
-# print(x)
+# Suma
+x=2+6
+print(x)
 
 
 # # Resta
