@@ -1,30 +1,36 @@
 #Autor:Alexis Serrato
-#este es un comentario de una sola linea
-''''
-este es un comentario de  
-multiples
+# Este es un comentario de una sola linea 
+'''
+Este es un comentario de 
+multiples 
 lineas
 
 '''
+
 print("Estudiando python")
-
-#definicion de variables
-
+#Definicion de variables 
 '''
-
-reglas:
-python es sensible a minusculas y mayúsculas
-no se pueden usar espacio
-no se pueden usar palabras reservadas
-no es conveniente usar numeros como nombres de variables
+Reglas: 
+Python es sensible a minusculas y mayusculas
+No se pueden usar espacios
+No se pueden usar palabras reservadas
+No es conveniente usar numeros como nombres de variables
 
 '''
 x=50
 y=15
-
-print(x+y)
-
+print(x+y)  
+print(type(x))
+# <class 'int'> : significa que x es un numero entero
+#--
+nombre="Alexis"
+print(nombre)
+print(type(nombre))
+#<class 'str'> : significa que la variable nombre es un string (cadena)
 
 print(type(x))
+x=4.8
+print(type(x))
+#<class 'float'> : significa que la variable es un flotante (numero decimal)
 
-#class 
+print(x , nombre)

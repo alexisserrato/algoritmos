@@ -18,9 +18,9 @@ Operadores aritméticos
 
 # #División
 # ''' para python la división siempre retorna float'''
-# divide=25/5
-# print(divide)
-# print(type(divide))
+divide=25/5
+print(divide)
+print(type(divide))
 
 # #división piso (floor)
 # ''' la divión piso me devuelve el número más próximo hacia abajo'''
@@ -91,7 +91,8 @@ Operadores aritméticos
 '''Operadores logicos
 and me exige que todas las condiciones sean true para responder true de lo contrario responde false
 or: este operador nesecita que algunas de las condiciones sea true para responder
-not
+not:En el caso del operador not se valida si una variable es False o True. Si la variable
+existe en memoria tenemos un valor por defecto True
 '''
 
 # x=4#defino el valor de la variable x
@@ -109,3 +110,9 @@ print(not enunciado)
 usuario_logueado=True
 boton_logout=True
 print(not usuario_logueado)
+
+
+'''operadores de identidad
+is
+is not
+'''
