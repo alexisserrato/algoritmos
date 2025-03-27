@@ -74,11 +74,11 @@ print(type(divide))
 # #<
 
 # ''' operadores de asignación'''
-# # Incremento
-# x=20
-# x=20 + 1
-# print(x)
-# print(x++2)
+# Incremento
+x=20
+x=20 + 1
+print(x)
+print(x++2)
 
 # #Decrecimiento
 # y=5

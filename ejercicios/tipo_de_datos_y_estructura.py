@@ -51,7 +51,7 @@ set4=set3.union(set1)
 
 #Interseccion
 set5={"f","w","a","b"}
-# print(set5.intersection(set1))
+print(set5.intersection(set1))
 # set5.remove("w")
 # print(set5)
 
@@ -77,7 +77,7 @@ como se define:(, , , , , )
 '''
 
 tupla1=(1,1,1,1,1,2,3,4,5)
-print(type(tupla1))
+# print(type(tupla1))
 
 #Métodos
 #count
@@ -101,7 +101,7 @@ COMO SE DEFINEN: [, , , , , ]
 <class 'list'>
 '''
 lista1=[8,9,7,5,4,10]
-print(type(lista1))
+# print(type(lista1))
 
 lista2=[["jhon", "alejandro", "lewin"],["isabel", "juan", "daniel"]]
 # print(type(lista2))#<class'list'>
@@ -114,27 +114,27 @@ print("------")
 #reverse
 lista1 = [8, 9, 7, 5, 4, 10]
 lista1.reverse()  # Modifica lista1 en su lugar
-print("Salida del método reverse ")
-print(lista1)  # Ahora lista1 está invertida
+# print("Salida del método reverse ")
+# print(lista1)  # Ahora lista1 está invertida
 # 
 #Salida del método reverse
 #[10, 4, 5, 7, 9, 8]
 lista1 = [8, 9, 7, 5, 4, 10]
 listad= list(reversed(lista1))  # Convierte el iterador en una lista nueva
-print("esta es la lista d", listad)
+# print("esta es la lista d", listad)
 
 
 #sort
 lista2  = [8, 9, 7, 5, 4, 10]
 lista2.sort() #en orden ascendente es por defecto
-print("salida del método sort")
-print(lista2)
+# print("salida del método sort")
+# print(lista2)
 #salida del método sort
 #[4, 5, 7, 8, 9, 10]
 lista2.sort(reverse=True)
 listac=lista2.sort(reverse=True)
-print("salida del método sort con reverse True")
-print(lista2)
+# print("salida del método sort con reverse True")
+# print(lista2)
 
 #salida del método sort con reverse True -->orden descendente
 #[10, 9, 8, 7, 5, 4]
@@ -190,4 +190,51 @@ print("Lista ordenada:", lista_ordenada)  # [4, 5, 7, 8, 9, 10]
 #como acceder a los elmentos de la lista
 lista2=[["jhon", "alejandro", "lewin"],["isabel", "juan", "daniel"]]
 
-print(lista2[0][1])
+# print(lista2[0][1])
+
+'''
+Diccionarios
+<class 'dict'>
+
+{'clave':'valor', 'clave2':'valor2',,,,,, }
+
+
+{
+'clave':'valor', 
+'clave2':'valor2',
+,,,,, 
+}
+
+'''
+
+estudiante={'diana':25,'juan':20,'ana':29}
+
+print(type(estudiante))
+print(estudiante.keys())
+print(estudiante. values())
+
+
+#diccionarios que involucren otras estructuras
+instituto={'robotica':["diana","juan","pedro"],
+'programacion':["andres","luis","miguel"]
+}
+
+print(instituto.values())
+colegio={
+    'quimica':{"luisa":15,"jose":34},
+    'fisica':{"lina":14,"mario":17}
+}
+print(estudiante.values())
+
+distancia={
+    ('palmira','cali'):22,
+    ('palmira','pradera'):15
+}
+
+#actualizar el diccionario agregando una nueva clave
+
+estudiante['luisa']=45
+print(estudiante)
+estudiante['juan']=18
+print(estudiante)
+print(estudiante.get('luisa'))
