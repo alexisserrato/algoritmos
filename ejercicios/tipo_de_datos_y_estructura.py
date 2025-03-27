@@ -109,6 +109,70 @@ lista2=[["jhon", "alejandro", "lewin"],["isabel", "juan", "daniel"]]
 #métodos
 # print(lista1.count(14))
 
+print("------")
+#INVESTIGACIÓN
+#reverse
+lista1 = [8, 9, 7, 5, 4, 10]
+lista1.reverse()  # Modifica lista1 en su lugar
+print("Salida del método reverse ")
+print(lista1)  # Ahora lista1 está invertida
+# 
+#Salida del método reverse
+#[10, 4, 5, 7, 9, 8]
+lista1 = [8, 9, 7, 5, 4, 10]
+listad= list(reversed(lista1))  # Convierte el iterador en una lista nueva
+print("esta es la lista d", listad)
+
+
+#sort
+lista2  = [8, 9, 7, 5, 4, 10]
+lista2.sort() #en orden ascendente es por defecto
+print("salida del método sort")
+print(lista2)
+#salida del método sort
+#[4, 5, 7, 8, 9, 10]
+lista2.sort(reverse=True)
+listac=lista2.sort(reverse=True)
+print("salida del método sort con reverse True")
+print(lista2)
+
+#salida del método sort con reverse True -->orden descendente
+#[10, 9, 8, 7, 5, 4]
+lista2.sort()
+
+#FIRMA DEL MÉTODO SORT
+#list.sort(*, key: None = None, reverse: bool = False) -> None
+'''
+* → Indica que los parámetros después de este deben pasarse por nombre 
+(es decir, key= y reverse= deben especificarse explícitamente).
+
+key: None = None → Parámetro opcional que permite definir una función personalizada 
+para ordenar los elementos.
+
+reverse: bool = False → Si es True, ordena en orden descendente; si es False,
+ordena en ascendente (por defecto).
+
+-> None → Indica que el método no devuelve nada (None), 
+sino que modifica la lista en su lugar (in-place).
+'''
+
+'''
+Si quieres guardar la lista ordenada en otra variable sin modificar la original,
+NO uses .sort() porque modifica la lista en su lugar y devuelve None.
+En su lugar, usa la función sorted().
+
+lista2 = [8, 9, 7, 5, 4, 10]
+
+lista_ordenada = sorted(lista2)  # Crea una nueva lista ordenada
+print("Lista original:", lista2)  # [8, 9, 7, 5, 4, 10]
+print("Lista ordenada:", lista_ordenada)  # [4, 5, 7, 8, 9, 10]
+
+Otra opción es:
+lista2.sort()
+lista_ordenada = lista2.copy()  # Guarda una copia de la lista ordenada
+print("Lista ordenada:", lista_ordenada)  # [4, 5, 7, 8, 9, 10]
+
+'''
 #reverse
 # print(lista1.reverse())
 
